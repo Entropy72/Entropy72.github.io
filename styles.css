@@ -1,7 +1,6 @@
 body {
     background-image: url('d1e7c1e16ac79d710e5db0bf983c25cb.png');
-    background-size: contain; /* Ensures the image is fully visible */
-    background-position: center;
+    background-position: top left; /* Sets the starting point for repetition */
     background-repeat: repeat; /* Makes the image repeat */
     color: white;
     font-family: Arial, sans-serif;
