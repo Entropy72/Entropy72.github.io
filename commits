@@ -1,0 +1,16 @@
+• This is a commit log, that tracks the changes I've made in more detail that the commit messages. 
+  The changes for this commit have been:
+
+   - I've tested the changes in the windows side and now adding them to github.
+   - a solid black header and footer
+   - a box in the middle with a green and black border
+   - all the links and title is in the box
+
+  Changes that could be made in the future:
+ 
+   - three lines in the corner of the header 
+   - futher customization of background. change it from this to the green moving one. and to a bi themed one as well.
+   - the links are broader and take you to other pages.
+   - ability to upload links directly to the site if you have the password.
+
+

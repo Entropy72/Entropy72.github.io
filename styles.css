@@ -1,22 +1,54 @@
 body {
     background-image: url('d1e7c1e16ac79d710e5db0bf983c25cb.png');
-    background-position: top left; /* Sets the starting point for repetition */
-    background-repeat: repeat; /* Makes the image repeat */
+    background-position: center;
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex; /* Enable Flexbox on the body */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */
+    min-height: 80vh; /* Adjusted minimum height */
+    position: relative; /* Ensures child elements like the top-line are positioned relative to the body */
 }
 
-h1 {
+.center-box {
+    background-color: black; /* Solid black */
+    color: white;
+    padding: 50px 30px; /* Increased padding for more height */
+    border-radius: 10px; /* Rounded corners */
+    width: 400px; /* Make the box wider */
     text-align: center;
-    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+    border: 5px solid #023020; /* Dark green border */
+    outline: 8px solid black; /* Black border around the green border */
+    margin-top: 200px; /* Moves the box down */
+}
+
+.top-line {
+    background-color: black; /* Solid black */
+    height: 60px; /* Thickness of the line */
+    width: 100%; /* Stretch across the screen */
+    position: absolute; /* Positions it above the background image */
+    top: 0; /* Align to the very top */
+    left: 0; /* Ensures it starts at the left edge */
+    z-index: 10; /* Ensures it appears above everything else */
+}
+
+.center-box h1 {
+    margin: 0 0 20px; /* Adds space below the header */
+    text-align: center;
+    font-size: 24px; /* Adjust the size of the header */
+    background-color: black; /* Black background for the header */
+    color: white; /* White text for contrast */
+    padding: 10px; /* Add padding to the header */
+    border-radius: 5px; /* Slight rounding for the header */
 }
 
 ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
+    margin: 0;
 }
 
 li {
@@ -31,5 +63,16 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+footer {
+    background-color: black; /* Solid black */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
 }
 
